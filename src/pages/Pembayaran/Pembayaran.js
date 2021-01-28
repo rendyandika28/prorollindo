@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pembayaran.css";
+import { Button } from "../../components";
 
 const Pembayaran = () => {
   return (
@@ -35,17 +36,17 @@ const Pembayaran = () => {
         </li>
       </ul>
 
-      {/* Tambah Data Page */}
       <div class="tab-content" id="myTabContent">
+        {/* Tambah Datas */}
         <div
-          class="tab-pane fade show active"
+          class="tab-pane fade show active pembayaran__tambahdata"
           id="tambah"
           role="tabpanel"
           aria-labelledby="tambah-tab"
         >
           <form>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
+              <label for="exampleFormControlSelect1">ID Pemesanan</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>1</option>
                 <option>2</option>
@@ -55,16 +56,18 @@ const Pembayaran = () => {
               </select>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
+              <label for="totalamount">Jumlah Pembayaran</label>
+              <input type="number" class="form-control" id="totalamount" />
             </div>
+            <div class="form-group">
+              <label for="date">Tanggal Pembayaran</label>
+              <input type="date" class="form-control" id="date" />
+            </div>
+            <Button text="Tambah Data" />
           </form>
         </div>
+        {/* List Data */}
+
         <div
           class="tab-pane fade"
           id="list"

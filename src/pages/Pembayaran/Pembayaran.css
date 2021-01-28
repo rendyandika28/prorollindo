@@ -27,3 +27,13 @@
   border-bottom: 4px solid #E3261A;
   width: 75%;
 }
+
+.pembayaran .pembayaran__tambahdata {
+  width: 40%;
+}
+
+.pembayaran .pembayaran__tambahdata form label{
+  font-size: 13px;
+  color: #A5A5A5;
+  margin-bottom: 0;
+}
