@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../components";
 import "./LaporanPenjualan.css";
 
 const LaporanPenjualan = () => {
@@ -18,7 +19,7 @@ const LaporanPenjualan = () => {
             </div>
             <input type="date" name="date" id="date" />
           </div>
-          <button type="submit">Cetak</button>
+          <Button text="Cetak" />
         </form>
       </div>
     </div>
