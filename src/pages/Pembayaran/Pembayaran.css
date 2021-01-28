@@ -1,0 +1,29 @@
+.pembayaran h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #E3261A;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+
+.pembayaran .nav {
+  margin-bottom: 10px;
+}
+.pembayaran .nav-tabs {
+  border-bottom: none;
+}
+.pembayaran .nav .nav-link {
+  padding-left: 0;
+  border: none;
+  color: #2d2c2c;
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  text-transform: capitalize;
+}
+.pembayaran .nav .nav-link.active::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #E3261A;
+  width: 75%;
+}

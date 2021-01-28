@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 40px 40px;
+}
+
+header img {
+  object-fit: contain;
+}
+
+header p {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 35px 10px 35px 40px;
+    margin: 0 60px;
+  }
+  header p {
+    margin: unset;
+  }
+}
+
+
+@media (min-width: 992px) {
+}
