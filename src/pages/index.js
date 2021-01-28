@@ -1,0 +1,10 @@
+export { default as Login } from "./Login/Login";
+export { default as Home } from "./Home/Home";
+export { default as Pelanggan } from "./Pelanggan/Pelanggan";
+export { default as Produk } from "./Produk/Produk";
+export { default as Pemesanan } from "./Pemesanan/Pemesanan";
+export { default as SuratJalan } from "./SuratJalan/SuratJalan";
+export { default as Faktur } from "./Faktur/Faktur";
+export { default as Pembayaran } from "./Pembayaran/Pembayaran";
+export { default as LaporanPenjualan } from "./LaporanPenjualan/LaporanPenjualan";
+export { default as About } from "./About/About";

@@ -1,0 +1,49 @@
+.about {
+  color: #3B0400;
+}
+
+.about h2 {
+ font-size: 25px;
+ font-weight: 500;
+ color: #E3261A;
+ text-transform: capitalize;
+ margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.about__team .team {
+  display: flex;
+  justify-content: space-between;
+  width: 78%; 
+}
+.about__team .team h6{
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.about__team .team p{
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+  color: #9C9A9A;
+}
+.about__team .team span:nth-child(2){
+  font-size: 13px;
+  color: #3B0400;
+}
+
+@media (min-width: 768px) {
+  .about__team .team {
+    width: 48%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .about__team .team {
+    width: 33%; 
+  }
+}
