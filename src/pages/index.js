@@ -8,3 +8,4 @@ export { default as Faktur } from "./Faktur/Faktur";
 export { default as Pembayaran } from "./Pembayaran/Pembayaran";
 export { default as LaporanPenjualan } from "./LaporanPenjualan/LaporanPenjualan";
 export { default as About } from "./About/About";
+export { default as EditPemesanan} from "./EditPemesanan/EditPemesanan";
