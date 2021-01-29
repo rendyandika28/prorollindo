@@ -8,3 +8,6 @@ export { default as PembayaranIcon } from "./pembayaran-icon.svg";
 export { default as PemesananIcon } from "./pemesanan-icon.svg";
 export { default as ProdukIcon } from "./produk-icon.svg";
 export { default as SurjalIcon } from "./surjal-icon.svg";
+export { default as SearchIcon } from "./search-icon.svg";
+export { default as ArrowIcon } from "./arrow-icon.svg";
+
