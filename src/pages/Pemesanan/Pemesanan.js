@@ -9,7 +9,6 @@ const Pemesanan = () => {
   return <div className="pemesanan">
     <h3>Data Pemesanan</h3>
     
-
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a
@@ -92,7 +91,7 @@ const Pemesanan = () => {
           aria-labelledby="list-tab"
         >
           <div class="pemesanan__tablebutton ">
-          <Link to="/admin/pemesanan/editpemesanan"><Button text="Edit"/></Link>
+          <Link to="/admin/pemesanan/edit"><Button text="Edit"/></Link>
           <Button text="Hapus"/>
           <div class="pemesanan__search">
           <img src={SearchIcon}></img><input type="text"/> 
