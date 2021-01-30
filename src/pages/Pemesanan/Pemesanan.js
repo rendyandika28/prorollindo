@@ -77,7 +77,7 @@ const Pemesanan = () => {
               <input type="date" class="form-control" id="date" />
             </div>
             <div class="form-group">
-              <label for="date">Tanggal Pemesanan</label>
+              <label for="date">Tanggal Pengiriman</label>
               <input type="date" class="form-control" id="date" />
             </div>
             <Button text="Tambah Data" />
@@ -92,7 +92,7 @@ const Pemesanan = () => {
           aria-labelledby="list-tab"
         >
           <div class="pemesanan__tablebutton ">
-          <Link to="/admin/pemesanan/edit"><Button text="Edit"/></Link>
+          <Link to="/admin/pemesanan/editpemesanan"><Button text="Edit"/></Link>
           <Button text="Hapus"/>
           <div class="pemesanan__search">
           <img src={SearchIcon}></img><input type="text"/> 

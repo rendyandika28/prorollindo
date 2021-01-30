@@ -40,7 +40,7 @@ const EditPemesanan = () => {
               <input type="date" class="form-control" id="date" />
             </div>
             <div class="form-group">
-              <label for="date">Tanggal Pemesanan</label>
+              <label for="date">Tanggal Pengiriman</label>
               <input type="date" class="form-control" id="date" />
             </div>
             <Button text="Edit Data" />
