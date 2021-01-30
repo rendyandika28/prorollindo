@@ -10,3 +10,4 @@ export { default as LaporanPenjualan } from "./LaporanPenjualan/LaporanPenjualan
 export { default as About } from "./About/About";
 export { default as EditPemesanan} from "./EditPemesanan/EditPemesanan";
 export { default as EditFaktur} from "./EditFaktur/EditFaktur";
+export { default as EditSuratJalan} from "./EditSuratJalan/EditSuratJalan";

@@ -11,6 +11,7 @@ import {
   About,
   EditPemesanan,
   EditFaktur,
+  EditSuratJalan,
 } from "..";
 import { Header, Sidebar } from "../../components";
 import "./Home.css";
@@ -27,10 +28,11 @@ const Home = () => {
           <Route path="/admin/pelanggan" component={Pelanggan} />
           <Route path="/admin/produk" component={Produk} />
           <Route path="/admin/pemesanan" exact component={Pemesanan} />
-          <Route path="/admin/pemesanan/editpemesanan" component={EditPemesanan} />
-          <Route path="/admin/surat-jalan" component={SuratJalan} />
-          <Route path="/admin/faktur" component={Faktur} />
-          <Route path="/admin/pemesanan/editfaktur" component={EditFaktur} />
+          <Route path="/admin/pemesanan/edit" component={EditPemesanan} />
+          <Route path="/admin/surat-jalan" exact component={SuratJalan} />
+          <Route path="/admin/surat-jalan/edit" component={EditSuratJalan} />
+          <Route path="/admin/faktur" exact component={Faktur} />
+          <Route path="/admin/faktur/edit" exact component={EditFaktur} />
           <Route path="/admin/pembayaran" component={Pembayaran} />
           <Route path="/admin/laporan-penjualan" component={LaporanPenjualan} />
           <Route path="/admin/about" component={About} />

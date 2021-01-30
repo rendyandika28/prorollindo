@@ -80,7 +80,7 @@ const Faktur = () => {
           aria-labelledby="list-tab"
         >
           <div class="faktur__tablebutton ">
-          <Link to="/admin/pemesanan/editfaktur"><Button text="Edit"/></Link>
+          <Link to="/admin/faktur/edit"><Button text="Edit"/></Link>
           <Button text="Hapus"/>
           <div class="faktur__search">
           <img src={SearchIcon}></img><input type="text"/> 
