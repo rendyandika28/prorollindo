@@ -12,6 +12,7 @@ import {
   EditPemesanan,
   EditFaktur,
   EditSuratJalan,
+  EditPembayaran,
 } from "..";
 import { Header, Sidebar } from "../../components";
 import "./Home.css";
@@ -33,7 +34,8 @@ const Home = () => {
           <Route path="/admin/surat-jalan/edit" component={EditSuratJalan} />
           <Route path="/admin/faktur" exact component={Faktur} />
           <Route path="/admin/faktur/edit" exact component={EditFaktur} />
-          <Route path="/admin/pembayaran" component={Pembayaran} />
+          <Route path="/admin/pembayaran" exact component={Pembayaran} />
+          <Route path="/admin/pembayaran/edit" component={EditPembayaran} />
           <Route path="/admin/laporan-penjualan" component={LaporanPenjualan} />
           <Route path="/admin/about" component={About} />
         </aside>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Pembayaran.css";
 import { Button } from "../../components";
-import SearchIcons from "../../assets/icons/search-icon.png";
+import SearchIcon from "../../assets/icons/search-icon.png";
 import { Link } from "react-router-dom";
 
 const Pembayaran = () => {
@@ -76,22 +76,21 @@ const Pembayaran = () => {
           role="tabpanel"
           aria-labelledby="list-tab"
         >
-          <div className="pembayaran__button ">
-            <Link to="#" className="btn btn-red">Edit</Link>
-            <Link to="#" className="btn btn-red">Hapus</Link>
-            <div className="pembayaran__search">
-              <img src={SearchIcons} alt=""/>
-              <input type="text" name="" id="searchbox"/>
+           <div class="pembayaran__tablebutton ">
+            <Link to="/admin/pembayaran/edit"><Button text="Edit"/></Link>
+            <Button text="Hapus"/>
+            <div class="pembayaran__search">
+              <img src={SearchIcon}></img><input type="text"/> 
             </div>
           </div>
           <table class="table">
             <thead>
               <tr class="pembayaran__tablehead">
                 <th scope="col"></th>
-                <th scope="col">ID Pembayaran</th>
-                <th scope="col">Tanggal Pembayaran</th>
-                <th scope="col">Nama Perusahaan</th>
-                <th scope="col">Jumlah Pembayaran</th>
+                <th scope="col">ID <br/> Pembayaran</th>
+                <th scope="col">Tanggal <br/> Pembayaran</th>
+                <th scope="col">Nama <br/> Perusahaan</th>
+                <th scope="col">Jumlah <br/> Pembayaran</th>
                 <th scope="col">Status</th>
               </tr>
             </thead>
