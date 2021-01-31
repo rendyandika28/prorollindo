@@ -43,57 +43,60 @@
   color: white;
 }
 
-.pembayaran .pembayaran__button{
-  margin-top: -50px;
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.pembayaran .pembayaran__search{
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 7px;
-}
-
-.pembayaran .pembayaran__search img{
-  padding: 0 5px;
-}
-
-.pembayaran input#searchbox{
-  border: none;
-  border-radius: 7px;
-}
-
-.pembayaran input#searchbox:focus{
-  outline: none;
-}
-
-.pembayaran__button .btn-red{
-  background-color: #E3261A;
-  color: white;
+.pembayaran__tablebutton button{
   margin-right: 20px;
+  width: 95.16px;
+  height: 37.11px;
 }
 
-.pembayaran__button .btn-red:hover{
-  background-color: #bb1c11;
+.pembayaran__tablebutton{
+  margin-top: -50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.pembayaran__tablebutton input{
+  padding-left: 10px;
+  width: 275.45px;
+  height: 37.11px;
+  border-radius: 2vh;
+}
+
+.pembayaran__tablebutton input:focus{
+outline: none;
+}
+
+.pembayaran__tablebutton .pembayaran__search img{
+  height: 25px;
+  margin-left: 10px;
+  padding-right: 7px;
+  cursor: pointer;
+  border-right: 0.5px solid #000000;
+  
+}
+
+.pembayaran__search{
+  align-items: center;
+  display: flex;
+  border: 0.5px solid #000000;
+  border-radius: 2vh;
+  
+}
+
+.pembayaran__search input{
+  border: none;
 }
 
 .pembayaran table{
   border-bottom: 1px solid #dee2e6;
 }
 
-.pembayaran select{
+.pembayaran table select{
   border: none;
-}
-
-.pembayaran select option.complete{
-  color: #1F800F !important;
-}
-.pembayaran select option.cancel{
-  color: #E3261A;
-}
-.pembayaran select option.waiting{
-  color: #FFB118;
 }
 
 .pembayaran a.active{
