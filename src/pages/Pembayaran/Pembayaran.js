@@ -1,6 +1,8 @@
 import React from "react";
 import "./Pembayaran.css";
 import { Button } from "../../components";
+import SearchIcons from "../../assets/icons/search-icon.png";
+import { Link } from "react-router-dom";
 
 const Pembayaran = () => {
   return (
@@ -74,7 +76,82 @@ const Pembayaran = () => {
           role="tabpanel"
           aria-labelledby="list-tab"
         >
-          profile
+          <div className="pembayaran__button ">
+            <Link to="#" className="btn btn-red">Edit</Link>
+            <Link to="#" className="btn btn-red">Hapus</Link>
+            <div className="pembayaran__search">
+              <img src={SearchIcons} alt=""/>
+              <input type="text" name="" id="searchbox"/>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr class="pembayaran__tablehead">
+                <th scope="col"></th>
+                <th scope="col">ID Pembayaran</th>
+                <th scope="col">Tanggal Pembayaran</th>
+                <th scope="col">Nama Perusahaan</th>
+                <th scope="col">Jumlah Pembayaran</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><input type="checkbox" name="" id=""/></th>
+                <td>SW-001</td>
+                <td>10 Februari 2021</td>
+                <td>Justify Company</td>
+                <td>Rp. 2.300.000</td>
+                <td>
+                  <select name="" id="">
+                    <option value="complete">Complete</option>
+                    <option value="cancel">Cancel</option>
+                    <option value="waiting">Waiting</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox" name="" id=""/></th>
+                <td>SW-001</td>
+                <td>10 Februari 2021</td>
+                <td>Justify Company</td>
+                <td>Rp. 2.300.000</td>
+                <td>
+                  <select name="" id="">
+                    <option value="complete">Complete</option>
+                    <option value="cancel">Cancel</option>
+                    <option value="waiting">Waiting</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox" name="" id=""/></th>
+                <td>SW-001</td>
+                <td>10 Februari 2021</td>
+                <td>Justify Company</td>
+                <td>Rp. 2.300.000</td>
+                <td>
+                  <select name="" id="">
+                    <option class="complete" value="complete">Complete</option>
+                    <option class="cancel" value="cancel">Cancel</option>
+                    <option class="waiting" value="waiting">Waiting</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* pagination */}
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><Link class="" href="#">&laquo;</Link></li>
+              <li class="page-item"><Link class="" href="#">1</Link></li>
+              <li class="page-item"><Link class="active" href="#">2</Link></li>
+              <li class="page-item"><Link class="" href="#">3</Link></li>
+              <li class="page-item"><Link class="" href="#">4</Link></li>
+              <li class="page-item"><Link class="" href="#">5</Link></li>
+              <li class="page-item"><Link class="" href="#">&raquo;</Link></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

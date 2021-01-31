@@ -37,3 +37,76 @@
   color: #A5A5A5;
   margin-bottom: 0;
 }
+
+.pembayaran .pembayaran__tablehead{
+  background-color: #E3261A;
+  color: white;
+}
+
+.pembayaran .pembayaran__button{
+  margin-top: -50px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.pembayaran .pembayaran__search{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.pembayaran .pembayaran__search img{
+  padding: 0 5px;
+}
+
+.pembayaran input#searchbox{
+  border: none;
+  border-radius: 7px;
+}
+
+.pembayaran input#searchbox:focus{
+  outline: none;
+}
+
+.pembayaran__button .btn-red{
+  background-color: #E3261A;
+  color: white;
+  margin-right: 20px;
+}
+
+.pembayaran__button .btn-red:hover{
+  background-color: #bb1c11;
+}
+
+.pembayaran table{
+  border-bottom: 1px solid #dee2e6;
+}
+
+.pembayaran select{
+  border: none;
+}
+
+.pembayaran select option.complete{
+  color: #1F800F !important;
+}
+.pembayaran select option.cancel{
+  color: #E3261A;
+}
+.pembayaran select option.waiting{
+  color: #FFB118;
+}
+
+.pembayaran a.active{
+  font-weight: bold;
+}
+
+.pagination{
+  justify-content: center;
+  margin-top: 30px;
+}
+
+ul.pagination li a{
+  text-decoration: none;
+  letter-spacing: 15px;
+  color: black;
+}
