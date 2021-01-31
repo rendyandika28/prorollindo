@@ -1,0 +1,115 @@
+.pelanggan h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #E3261A;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+  }
+  
+  .pelanggan .nav {
+    margin-bottom: 10px;
+  }
+  .pelanggan .nav-tabs {
+    border-bottom: none;
+  }
+  .pelanggan .nav .nav-link {
+    padding-left: 0;
+    border: none;
+    color: #2d2c2c;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+    text-transform: capitalize;
+  }
+  .pelanggan .nav .nav-link.active::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #E3261A;
+    width: 75%;
+  }
+  
+  .pelanggan .pelanggan__tambahdata {
+    width: 40%;
+  }
+  
+  .pelanggan .pelanggan__tambahdata form label{
+    font-size: 13px;
+    color: #A5A5A5;
+    margin-bottom: 0;
+  }
+  
+  .pelanggan .pelanggan__tablehead{
+    background-color: #E3261A;
+    color: white;
+  }
+  
+  .pelanggan__tablebutton button{
+    margin-right: 20px;
+    width: 95.16px;
+    height: 37.11px;
+  }
+  
+  .pelanggan__tablebutton{
+    margin-top: -50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  
+  .pelanggan__tablebutton input{
+    padding-left: 10px;
+    width: 275.45px;
+    height: 37.11px;
+    border-radius: 2vh;
+  }
+  
+  .pelanggan__tablebutton input:focus{
+  outline: none;
+  }
+  
+  .pelanggan__tablebutton .pelanggan__search img{
+    height: 25px;
+    margin-left: 10px;
+    padding-right: 7px;
+    cursor: pointer;
+    border-right: 0.5px solid #000000;
+    
+  }
+  
+  .pelanggan__search{
+    align-items: center;
+    display: flex;
+    border: 0.5px solid #000000;
+    border-radius: 2vh;
+    
+  }
+  
+  .pelanggan__search input{
+    border: none;
+  }
+  
+  .pelanggan table{
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .pelanggan table select{
+    border: none;
+  }
+  
+  .pelanggan a.active{
+    font-weight: bold;
+  }
+  
+  .pagination{
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  ul.pagination li a{
+    text-decoration: none;
+    letter-spacing: 15px;
+    color: black;
+  }
