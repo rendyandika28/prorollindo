@@ -1,0 +1,29 @@
+.editfaktur h3{
+    padding-bottom: 20px;
+    color: #E3261A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.editfaktur a{
+    color: #3C0400;
+    text-decoration: none;
+}
+
+.editfaktur img{
+    padding-right: 10px;
+}
+
+.editfaktur form{
+    padding-top: 20px;
+    width: 382.83px;
+
+}
+
+.editfaktur form label{
+    font-size: 10px;
+    color: #A5A5A5;
+    margin-bottom: 0;
+}
+
+.editfaktur form  button{
+    margin-top: 10px;
+}
