@@ -13,6 +13,7 @@ import {
   EditFaktur,
   EditSuratJalan,
   EditPembayaran,
+  EditPelanggan,
 } from "..";
 import { Header, Sidebar } from "../../components";
 import "./Home.css";
@@ -26,7 +27,8 @@ const Home = () => {
           <Sidebar />
         </aside>
         <aside className="home__content">
-          <Route path="/admin/pelanggan" component={Pelanggan} />
+          <Route path="/admin/pelanggan" exact component={Pelanggan} />
+          <Route path="/admin/pelanggan/edit" component={EditPelanggan} />
           <Route path="/admin/produk" component={Produk} />
           <Route path="/admin/pemesanan" exact component={Pemesanan} />
           <Route path="/admin/pemesanan/edit" component={EditPemesanan} />
