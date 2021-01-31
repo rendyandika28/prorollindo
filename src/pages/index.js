@@ -13,3 +13,4 @@ export { default as EditPemesanan} from "./EditPemesanan/EditPemesanan";
 export { default as EditFaktur} from "./EditFaktur/EditFaktur";
 export { default as EditSuratJalan} from "./EditSuratJalan/EditSuratJalan";
 export { default as EditPelanggan} from "./EditPelanggan/EditPelanggan";
+export { default as EditProduk} from "./EditProduk/EditProduk";

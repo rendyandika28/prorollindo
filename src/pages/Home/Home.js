@@ -14,6 +14,7 @@ import {
   EditSuratJalan,
   EditPembayaran,
   EditPelanggan,
+  EditProduk,
 } from "..";
 import { Header, Sidebar } from "../../components";
 import "./Home.css";
@@ -29,7 +30,8 @@ const Home = () => {
         <aside className="home__content">
           <Route path="/admin/pelanggan" exact component={Pelanggan} />
           <Route path="/admin/pelanggan/edit" component={EditPelanggan} />
-          <Route path="/admin/produk" component={Produk} />
+          <Route path="/admin/produk" exact component={Produk} />
+          <Route path="/admin/produk/edit" component={EditProduk} />
           <Route path="/admin/pemesanan" exact component={Pemesanan} />
           <Route path="/admin/pemesanan/edit" component={EditPemesanan} />
           <Route path="/admin/surat-jalan" exact component={SuratJalan} />
