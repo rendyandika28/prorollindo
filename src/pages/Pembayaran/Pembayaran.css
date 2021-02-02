@@ -3,7 +3,7 @@
   font-weight: 500;
   color: #E3261A;
   text-transform: capitalize;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
 }
 
 .pembayaran .nav {
@@ -13,7 +13,7 @@
   border-bottom: none;
 }
 .pembayaran .nav .nav-link {
-  padding-left: 0;
+  margin-left: -10px;
   border: none;
   color: #2d2c2c;
   font-weight: 700;
@@ -29,7 +29,8 @@
 }
 
 .pembayaran .pembayaran__tambahdata {
-  width: 40%;
+  width: 382.83px;
+
 }
 
 .pembayaran .pembayaran__tambahdata form label{

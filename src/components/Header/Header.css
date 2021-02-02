@@ -7,12 +7,23 @@ header {
 
 header img {
   object-fit: contain;
+
 }
 
 header p {
   display: flex;
   flex-direction: row;
   margin: auto;
+  cursor: pointer;
+  color: #3C0400;
+  font-weight: 500;
+  text-decoration: none;
+}
+header p span:nth-child(1) {
+  margin-right: 4px;
+}
+header a{
+  text-decoration: none !important;
 }
 
 @media (min-width: 768px) {

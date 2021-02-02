@@ -3,7 +3,7 @@
     font-weight: 500;
     color: #E3261A;
     text-transform: capitalize;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
   }
   
   .produk .nav {
@@ -13,7 +13,7 @@
     border-bottom: none;
   }
   .produk .nav .nav-link {
-    padding-left: 0;
+    margin-left: -10px;
     border: none;
     color: #2d2c2c;
     font-weight: 700;
@@ -29,7 +29,7 @@
   }
   
   .produk .produk__tambahdata {
-    width: 40%;
+    width: 382.83px;
   }
   
   .produk .produk__tambahdata form label{

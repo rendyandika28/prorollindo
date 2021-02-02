@@ -1,11 +1,49 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Icon } from "../../assets/icons";
 import BannerLogin from "../../assets/images/banner-login.jpg";
-
 import "./Login.css";
+import axios from "../../data/axios";
 
 const Login = () => {
+  // Auth User Check
+  const LoggedIn = localStorage.token;
+  const history = useHistory();
+  const authUser = () => {
+    if (LoggedIn) history.goBack();
+  };
+
+  useEffect(() => {
+    authUser();
+  }, []);
+
+  const [Form, setForm] = useState({
+    username: "",
+    password: "",
+  });
+
+  const handleInputChange = (e) => {
+    setForm({
+      ...Form,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handleFormLogin = (e) => {
+    e.preventDefault();
+
+    axios
+      .post("api/token/", Form)
+      .then((res) => {
+        localStorage.setItem("token", res.data.access);
+        localStorage.setItem("token-refresh", res.data.refresh);
+        history.push("/admin/pelanggan");
+      })
+      .catch((err) =>
+        alert("Unable to sign in, please check your email and password")
+      );
+  };
+
   return (
     <main className="login">
       <aside className="login__left-side">
@@ -16,16 +54,18 @@ const Login = () => {
           Selamat datang, silahkan masukkan username dan password Anda
         </p>
 
-        <form>
+        <form onSubmit={handleFormLogin}>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1" className="login__label-input">
-              Email address
+            <label htmlFor="username" className="login__label-input">
+              Username
             </label>
             <input
-              type="email"
+              type="text"
               className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="username"
+              aria-describedby="username"
+              value={Form.username}
+              onChange={handleInputChange}
             />
           </div>
           <div className="form-group">
@@ -38,12 +78,14 @@ const Login = () => {
             <input
               type="password"
               className="form-control"
-              id="exampleInputPassword1"
+              id="password"
+              value={Form.password}
+              onChange={handleInputChange}
             />
           </div>
-          <Link to="/admin/pelanggan" type="submit" className="btn btn-login">
+          <button type="submit" className="btn btn-login">
             Masuk
-          </Link>
+          </button>
         </form>
       </aside>
       <aside className="login__right-side">

@@ -1,5 +1,5 @@
-import React from "react";
-import { Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, useHistory } from "react-router-dom";
 import {
   Faktur,
   LaporanPenjualan,
@@ -20,6 +20,14 @@ import { Header, Sidebar } from "../../components";
 import "./Home.css";
 
 const Home = () => {
+  const LoggedIn = localStorage.token;
+  const history = useHistory();
+  const authUser = () => {
+    if (LoggedIn === undefined) history.push("/login");
+  };
+  useEffect(() => {
+    authUser();
+  }, []);
   return (
     <div className="home">
       <Header />
